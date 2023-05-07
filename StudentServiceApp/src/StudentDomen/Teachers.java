@@ -1,31 +1,40 @@
 package StudentDomen;
 
+
+
+//  класс Учителя
 public class Teachers extends User{
 
-    private String item;
+   
     private int idTeacher;
-
-    public Teachers(String name, String surname, int age, String item, int idTeacher) {
+    private String academicDegree;
+// конструктор
+    public Teachers(String name, String surname, int age, int idTeacher, String academicDegree) {
         super(name, surname, age);
-        this.item = item;
         this.idTeacher = idTeacher;
-    }
-    public String getItem(){
-        return item;
+        this.academicDegree = academicDegree;
     }
 
 
+// получить id
     public int getIdTeacher(){
         return idTeacher;
     }
-    public void setItem(String item){
-        this.item = item;
+// получить ученую степень
+    public String getAcademicDegree()
+    {
+        return academicDegree;
     }
+
+// добавить  id
     public void setIdTeacher(int idTeacher){
         this.idTeacher = idTeacher;
     }
-
-
+//добавить ученую степень
+    public void setAcademicDegree(String academicDegree)
+    {
+        this.academicDegree = academicDegree;
+    }
 
     @Override
  //переопределние метода
@@ -35,9 +44,11 @@ public class Teachers extends User{
      "surname='" + super.getSurname() + '\'' +
      ", name='" + super.getName() + '\'' +
      ", age='" + super.getAge() + '\'' +
-     ", item='" + item + '\'' + 
-     ", idTeacher='" + idTeacher + 
+     ", idTeacher='" + idTeacher + '\'' + 
+     ", academicDegree='" + academicDegree + 
      '}';
 }
     
 }
+
+

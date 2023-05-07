@@ -14,7 +14,7 @@ public class PromoClient extends Actor{
     {
         super(name);
         this.namePromo = namePromo;
-        PromoClient.numberClientPromo=5;
+        PromoClient.numberClientPromo = 5;
     }
     // метод, позволяющий получить название акции
     public String getNamePromo()
